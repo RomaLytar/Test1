@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Autor</title>
+		<meta content="" name="description" />
+		<link rel="stylesheet" href="css/fonts/fonts.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+<body>
+	<header class="main_header">
+		<div class="container">
+			<div class="logo">
+				<a href="Index.html"><img src="img/logo.png" alt="logo"></a>
+			</div>
+
+			<nav id="heder_navigation">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#the_team">Team</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>		
+
+<main class="container">
+	<section class="slaider_heder">
+		<h2 class="title">This is a main heading</h2>
+		<p>Lorem Ipsum is simply dummy text <br>of the printing   setting indu</p>
+		<a href="" class="lear_more">Learn More</a>
+	</section>
+
+	<section id="the_team">
+	<h1>The Team</h1>
+		<div class="item">
+			<img src="img/photo.png" alt="">
+			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+		</div>
+
+		<div class="item">
+			<img src="img/photo.png" alt="">
+			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+		</div>
+
+		<div class="item">
+			<img src="img/photo.png" alt="">
+			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+		</div>
+
+		<div class="item">
+			<img src="img/photo.png" alt="">
+			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+		</div>
+	</section>
+
+	 <section id="service">
+	      <div class="iteam">
+	        <button>Basic</button>
+	        <h4>$5.01/ Month</h4>
+	        <ul>
+	          <li>Lorem ipsum</li>
+	          <li>Dolor sit amet, consect</li>
+	          <li>Adipiscing elit</li>
+	          <li>Proin commodo turpis</li>
+	          <li>lacus pulvinarvel </li>
+	          <li>Prnare nisi pretium.</li>
+	        </ul>
+	        <button class="accent">Buy now</button>
+	      </div>
+
+	      <div class="iteam">
+	        <button>Pro</button>
+	        <h4>$10.01/ Month</h4>
+	        <ul>
+	          <li>Lorem ipsum</li>
+	          <li>Dolor sit amet, consect</li>
+	          <li>Adipiscing elit</li>
+	          <li>Proin commodo turpis</li>
+	          <li>lacus pulvinarvel </li>
+	          <li>Prnare nisi pretium.</li>
+	        </ul>
+	        <button class="accent">Buy now</button>
+	      </div>
+
+	      <div class="iteam">
+	        <button>Premium</button>
+	        <h4>$20.01/ Month</h4>
+	        <ul>
+	          <li>Lorem ipsum</li>
+	          <li>Dolor sit amet, consect</li>
+	          <li>Adipiscing elit</li>
+	          <li>Proin commodo turpis</li>
+	          <li>lacus pulvinarvel </li>
+	          <li>Prnare nisi pretium.</li>
+	        </ul>
+	        <button class="accent">Buy now</button>
+	      </div>
+  </section>
+
+</main>
+
+<footer id="Contact">
+<h1>Contact Us</h1>
+	<div class="left_footer">
+		<h4>Get in touch with us</h4>
+		<p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been the industry'</p>
+		<ul>
+			<li><a href=""><img src="img/f.png" alt=""></a></li>
+			<li><a href=""><img src="img/t.png" alt=""></a></li>
+			<li><a href=""><img src="img/g.png" alt=""></a></li>
+		</ul>
+		<h6>Posted by Dospel & GanjaParker
+		<br>+XX-XXXX - XXXX - XX
+		<br>info@mail.com
+		</h6>
+	</div>
+	<div class="right_footer">
+		<form action="#" method="#" class="form" id="js-register-form">
+        <div class="message js-form-message"></div>
+        <div class="form-group">
+            <input type="text" placeholder="Ваше имя" name="form_name" class="form-input">
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Ваш e-mail" name="form_email" class="form-input">
+        </div>
+        <div class="form-group_area">
+            <textarea name="" placeholder="Текст сообщения" class="form-textarea" rows="10" cols="45"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="form-btn">Отправить</button>
+        </div>
+    </form>
+        
+	</div>
+</footer>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#heder_navigation").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+
+});
+</script>
+<!--
+  <script type='text/javascript'>
+function validate(){
+   //Записуем имя и емеил в переменные
+   var n=document.forms['form']['name'].value;
+   var e=document.forms['form']['email'].value;
+   var m=document.forms['form']['message'].value;
+   //Проверка на пустоту поля
+   if (n.length==0){
+      document.getElementById('erroe_name').innerHTML='*Заполните Имя';
+      return false;
+   }
+   //Проверка на заполнения сообщения
+   if (m.length==0){
+      document.getElementById('erroe_massage').innerHTML='*Ввидите текст сообщения';
+      return false;
+   }
+   //Проверка на пустоту поля емеил
+   if (e.length==0){
+      document.getElementById('error_email').innerHTML='*Введите E-mail';
+      return false;
+   }
+   //Есть ли @
+   dog=e.indexOf("@");
+   point=e.indexOf(".");
+   //проверка на наличия точки
+   if (dog<1 || point <1){
+      document.getElementById('error_email').innerHTML='*E-mail введен не правильно';
+      return false;
+   }
+}
+</script>
+
+
+<!--
+<script>
+	$(document).ready(function() {
+    $('#email').blur(function() {
+        if($(this).val() != '') {
+            var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+            if(pattern.test($(this).val())){
+                $(this).css({'border' : '1px solid #569b44'});
+                $('#valid').text('Верно');
+            } else {
+                $(this).css({'border' : '1px solid #ff0000'});
+                $('#valid').text('Не верно');
+            }
+        } else {
+            // Поле email пустое, выводим предупреждающее сообщение
+            $(this).css({'border' : '1px solid #ff0000'});
+            $('#valid').text('Поле email не должно быть пустым');
+        }
+    });
+});
+</script>-->
+<!--<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("name").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 x > 20) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+-->
+</body>
+</html>
