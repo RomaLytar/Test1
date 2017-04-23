@@ -157,6 +157,7 @@ body {
 #the_team p {
   padding: 0px 15px 0 15px;
 }
+/*************     Контент     *****************/
 #service {
   width: 100%;
   height: 570px;
@@ -226,7 +227,6 @@ body {
   color: #8c9299;
   border-bottom: 1px solid #ecf0f1;
 }
-/*************     Контент     *****************/
 /*************     футер       *****************/
 footer {
   padding: 120px 50px 0 90px;
@@ -322,8 +322,8 @@ footer h1 {
 }
 .form-input_success,
 .form-textarea_success {
-  border-color: #7dbf23;
-  box-shadow: 0 0 10px #7dbf23;
+  border-color: green;
+  box-shadow: 0 0 10px green;
 }
 label.error {
   width: 150px;
@@ -370,4 +370,356 @@ label.error {
 }
 .message:empty {
   display: none;
+}
+.menu_icon {
+  cursor: pointer;
+  text-align: right;
+}
+.menu_icon svg g {
+  fill: #49cbcd;
+}
+/**********    Адаптив        **********/
+@media (min-width: 320px) and (max-width: 480px) {
+  .main_header #heder_navigation {
+    margin-top: -61px;
+  }
+  .main_header #heder_navigation ul {
+    display: none;
+  }
+  .main_header #heder_navigation ul li {
+    display: block;
+  }
+  .main_header #heder_navigation ul li a {
+    display: block;
+    color: #484c55;
+    background: #fff;
+    text-decoration: none;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    margin-top: 7px;
+  }
+  .main_header #heder_navigation ul li a:hover {
+    color: #49cbcd;
+    border: none;
+    background-color: #f8f9fb;
+    margin: 7px 0;
+  }
+  #the_team {
+    height: auto;
+  }
+  #the_team h1 {
+    text-align: left;
+    padding-left: 13%;
+    padding-bottom: 15px;
+  }
+  #the_team .item {
+    float: none;
+    margin: 2% 9%;
+  }
+  #the_team .item img:hover {
+    transform: scale(1.1);
+  }
+  #service {
+    height: auto;
+  }
+  #service .iteam {
+    float: none;
+    margin-bottom: 15px;
+  }
+  #service .iteam .accent {
+    margin-bottom: 15px;
+  }
+  .slaider_heder p {
+    margin: 46px 0 0 34px;
+    font-size: 14px;
+  }
+  .slaider_heder .title {
+    margin: 180px 0 0 54px;
+    font-size: 25px;
+  }
+  .slaider_heder .lear_more {
+    margin: 50px 0 0 87px;
+  }
+  footer {
+    height: 670px;
+    padding: 0;
+    text-align: center;
+  }
+  footer h1 {
+    text-align: left;
+    padding: 3% 0% 1% 11%;
+  }
+  footer .left_footer {
+    float: none;
+  }
+  footer .right_footer .form-group_area {
+    margin-left: 20px;
+    width: 65%;
+  }
+  footer .right_footer .form-group {
+    width: 309px;
+  }
+  footer .right_footer .form-btn {
+    margin-left: 25%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main_header #heder_navigation {
+    margin-top: -61px;
+  }
+  .main_header #heder_navigation ul {
+    display: none;
+  }
+  .main_header #heder_navigation ul li {
+    display: block;
+  }
+  .main_header #heder_navigation ul li a {
+    display: block;
+    color: #484c55;
+    background: #fff;
+    text-decoration: none;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    margin-top: 7px;
+  }
+  .main_header #heder_navigation ul li a:hover {
+    color: #49cbcd;
+    border: none;
+    background-color: #f8f9fb;
+    margin: 7px 0;
+  }
+  #the_team {
+    height: 1000px;
+  }
+  #the_team h1 {
+    text-align: center;
+    padding-right: 15%;
+    padding-bottom: 15px;
+  }
+  #the_team .item {
+    float: left;
+    margin: 2% 9%;
+  }
+  #the_team .item img:hover {
+    transform: scale(1.1);
+  }
+  #service {
+    height: 600px;
+  }
+  #service .iteam {
+    float: left;
+    margin-left: 40px;
+    width: 190px;
+    margin-bottom: 15px;
+  }
+  #service .iteam .accent {
+    margin-bottom: 15px;
+  }
+  #service .iteam button {
+    width: 100%;
+    height: 55px;
+    padding: 0;
+  }
+  .slaider_heder p {
+    margin: 6% 0% 0% 24%;
+    font-size: 1.3em;
+  }
+  .slaider_heder .title {
+    margin: 15% 0% 0% 16%;
+    font-size: 3.5em;
+  }
+  .slaider_heder .lear_more {
+    margin: 7% 0 0 31%;
+  }
+  footer {
+    height: 490px;
+    padding: 0;
+    text-align: center;
+  }
+  footer h1 {
+    text-align: left;
+    padding: 5% 35% 4% 15%;
+  }
+  footer .left_footer {
+    float: left;
+  }
+  footer .right_footer .form-group_area {
+    margin-left: 20px;
+    width: 65%;
+  }
+  footer .right_footer .form-group {
+    width: 309px;
+  }
+  footer .right_footer .form-btn {
+    margin-left: 25%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .main_header #heder_navigation {
+    width: 72%;
+    float: right;
+    margin-top: -84px;
+  }
+  .main_header #heder_navigation ul li a {
+    padding: 20px 20px;
+  }
+  .main_header #heder_navigation .menu_icon {
+    display: none;
+  }
+  .main_header .logo {
+    min-height: none;
+  }
+  #the_team {
+    height: 1000px;
+  }
+  #the_team h1 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #the_team .item {
+    float: left;
+    width: 36%;
+    margin: 2% 7%;
+  }
+  #the_team .item img:hover {
+    transform: scale(1.1);
+  }
+  #service {
+    height: 600px;
+  }
+  #service .iteam {
+    float: left;
+    margin-left: 40px;
+    width: 29%;
+    margin-bottom: 15px;
+  }
+  #service .iteam .accent {
+    width: 170px;
+    height: 33px;
+  }
+  #service .iteam button {
+    width: 100%;
+    height: 55px;
+    padding: 0;
+  }
+  .slaider_heder p {
+    margin: 6% 0% 0% 32%;
+    font-size: 1.5em;
+  }
+  .slaider_heder .title {
+    margin: 15% 0% 0% 22%;
+    font-size: 4em;
+  }
+  .slaider_heder .lear_more {
+    margin: 7% 0 0 41%;
+  }
+  footer {
+    height: 490px;
+    padding: 0;
+    text-align: center;
+  }
+  footer h1 {
+    text-align: center;
+    padding: 5% 14% 3% 16%;
+  }
+  footer .left_footer {
+    width: 50%;
+  }
+  footer .right_footer .form-group_area {
+    margin-left: 20px;
+    width: 65%;
+  }
+  footer .right_footer .form-group {
+    width: 309px;
+  }
+  footer .right_footer .form-btn {
+    margin-left: 25%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1250px) {
+  .main_header #heder_navigation {
+    width: 72%;
+    float: right;
+    margin-top: -84px;
+  }
+  .main_header #heder_navigation ul li a {
+    padding: 20px 20px;
+  }
+  .main_header #heder_navigation .menu_icon {
+    display: none;
+  }
+  .main_header .logo {
+    min-height: none;
+  }
+  #the_team {
+    height: 1000px;
+  }
+  #the_team h1 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #the_team .item {
+    float: left;
+    width: 36%;
+    margin: 2% 7%;
+  }
+  #the_team .item img:hover {
+    transform: scale(1.1);
+  }
+  #service {
+    height: 600px;
+  }
+  #service .iteam {
+    float: left;
+    margin-left: 40px;
+    width: 29%;
+    margin-bottom: 15px;
+  }
+  #service .iteam .accent {
+    width: 170px;
+    height: 33px;
+  }
+  #service .iteam button {
+    width: 100%;
+    height: 55px;
+    padding: 0;
+  }
+  .slaider_heder p {
+    margin: 6% 0% 0% 32%;
+    font-size: 1.5em;
+  }
+  .slaider_heder .title {
+    margin: 15% 0% 0% 22%;
+    font-size: 4em;
+  }
+  .slaider_heder .lear_more {
+    margin: 7% 0 0 41%;
+  }
+  footer {
+    height: 490px;
+    padding: 0;
+    text-align: center;
+  }
+  footer h1 {
+    text-align: center;
+    padding: 5% 14% 3% 16%;
+  }
+  footer .left_footer {
+    width: 50%;
+  }
+  footer .right_footer .form-group_area {
+    margin-left: 20px;
+    width: 65%;
+  }
+  footer .right_footer .form-group {
+    width: 309px;
+  }
+  footer .right_footer .form-btn {
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .main_header #heder_navigation .menu_icon {
+    display: none;
+  }
 }

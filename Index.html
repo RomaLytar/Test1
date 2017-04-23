@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/fonts/fonts.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/cssfx.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
 		<script src="js/custom.js"></script>
@@ -19,7 +20,10 @@
 			</div>
 
 			<nav id="heder_navigation">
-				<ul>
+			<div class="menu_icon">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink" height="25px" version="1.1" viewBox="0 0 25 25" width="25px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g id="Hamburger-Round"><path d="M0,4 C0,2.8954305 0.889763236,2 2.00359486,2 L22.9964051,2 C24.10296,2 25,2.88772964 25,4 C25,5.1045695 24.1102368,6 22.9964051,6 L2.00359486,6 C0.897039974,6 0,5.11227036 0,4 L0,4 Z M0,12 C0,10.8954305 0.889763236,10 2.00359486,10 L22.9964051,10 C24.10296,10 25,10.8877296 25,12 C25,13.1045695 24.1102368,14 22.9964051,14 L2.00359486,14 C0.897039974,14 0,13.1122704 0,12 L0,12 Z M0,20 C0,18.8954305 0.889763236,18 2.00359486,18 L22.9964051,18 C24.10296,18 25,18.8877296 25,20 C25,21.1045695 24.1102368,22 22.9964051,22 L2.00359486,22 C0.897039974,22 0,21.1122704 0,20 L0,20 Z" id="Hamburger"/></g></g></svg>
+			</div>
+				<ul class="menu">
 					<li><a href="Index.html">Home</a></li>
 					<li><a href="#service">Service</a></li>
 					<li><a href="#">Portfolio</a></li>
@@ -40,25 +44,25 @@
 
 	<section id="the_team">
 	<h1>The Team</h1>
-		<div class="item">
+		<div class="item cssfx">
 			<img src="img/photo.png" alt="">
 			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
 		</div>
 
-		<div class="item">
+		<div class="item cssfx">
 			<img src="img/photo.png" alt="">
 			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
 		</div>
 
-		<div class="item">
+		<div class="item cssfx">
 			<img src="img/photo.png" alt="">
 			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
 		</div>
 
-		<div class="item">
+		<div class="item cssfx" >
 			<img src="img/photo.png" alt="">
 			<h4>Adrian Thomas <br><span>CEO & Founder</span></h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
@@ -66,7 +70,7 @@
 	</section>
 
 	 <section id="service">
-	      <div class="iteam">
+	      <div class="iteam cssfx">
 	        <button>Basic</button>
 	        <h4>$5.01/ Month</h4>
 	        <ul>
@@ -80,7 +84,7 @@
 	        <button class="accent">Buy now</button>
 	      </div>
 
-	      <div class="iteam">
+	      <div class="iteam cssfx">
 	        <button>Pro</button>
 	        <h4>$10.01/ Month</h4>
 	        <ul>
@@ -94,7 +98,7 @@
 	        <button class="accent">Buy now</button>
 	      </div>
 
-	      <div class="iteam">
+	      <div class="iteam cssfx">
 	        <button>Premium</button>
 	        <h4>$20.01/ Month</h4>
 	        <ul>
@@ -130,16 +134,16 @@
 		<form action="#" method="#" class="form" id="js-register-form">
         <div class="message js-form-message"></div>
         <div class="form-group">
-            <input type="text" placeholder="Ваше имя" name="form_name" class="form-input">
+            <input type="text" placeholder="Ваше имя" name="form_name" class="form-input cssfx">
         </div>
         <div class="form-group">
-            <input type="email" placeholder="Ваш e-mail" name="form_email" class="form-input">
+            <input type="email" placeholder="Ваш e-mail" name="form_email" class="form-input cssfx">
         </div>
         <div class="form-group_area">
-            <textarea name="" placeholder="Текст сообщения" class="form-textarea" rows="10" cols="45"></textarea>
+            <textarea name="" placeholder="Текст сообщения" class="form-textarea cssfx" rows="10" cols="45"></textarea>
         </div>
         <div class="form-group">
-            <button type="submit" class="form-btn">Отправить</button>
+            <button type="submit" class="form-btn cssfx">Отправить</button>
         </div>
     </form>
         
@@ -160,6 +164,12 @@ $(document).ready(function(){
     });
 
 });
+</script>
+
+<script>
+$('.menu_icon').click(function(){
+    $('.menu').toggle('easing');
+}); 
 </script>
 <!--
   <script type='text/javascript'>

@@ -157,6 +157,8 @@ body {
 			padding: 0px 15px 0 15px;
 		}
 }
+
+/*************     Контент     *****************/
 #service{
 	width: 100%;
 	height: 570px;
@@ -226,8 +228,6 @@ body {
 		}
 	}
 }
-/*************     Контент     *****************/
-
 
 
 
@@ -338,8 +338,8 @@ footer{
     }
 
     &_success {
-        border-color: #7dbf23;
-        box-shadow: 0 0 10px #7dbf23;
+        border-color: green;
+        box-shadow: 0 0 10px green;
     }
 }
 
@@ -396,4 +396,410 @@ label.error {
     }
 }
 
-   
+
+.menu_icon{
+	cursor: pointer;
+	text-align: right;
+	svg{
+		g{
+			fill:#49cbcd;
+		}
+	}
+}
+
+
+/**********    Адаптив        **********/
+@media(min-width:320px) and (max-width:480px) {
+.main_header{
+	#heder_navigation{ 
+		margin-top: -61px;
+			ul{
+				display: none;
+				li{
+					display: block;
+					a{
+						display: block;
+					    color: #484c55;
+					    background: #fff;
+					    text-decoration: none;
+					    padding: 15px 0px 15px 0px;
+					    text-align: center;
+					    margin-top: 7px;
+					    &:hover{
+					    	color: #49cbcd;
+					    	border: none;
+							background-color: #f8f9fb;
+							margin: 7px 0;
+					    }
+					}
+				}
+			}
+		}
+	}
+#the_team{
+	height: auto;
+	h1{
+		text-align: left;
+		padding-left: 13%;
+		padding-bottom: 15px;
+	}
+	.item{
+		float: none;
+		margin:2% 9%;
+		img{
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+#service{
+	height: auto;
+		.iteam{
+			float: none;
+			margin-bottom: 15px;
+		.accent{
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.slaider_heder{
+	p{
+		margin: 46px 0 0 34px;
+		font-size: 14px;
+	}
+	.title{
+		margin:180px 0 0 54px;
+		font-size: 25px;
+		}
+	.lear_more{
+		margin: 50px 0 0 87px;
+	}
+}
+footer{
+	height: 670px;
+	padding: 0;
+	text-align: center;
+		h1{
+			text-align: left;
+			padding: 3% 0% 1% 11%;
+		}
+		.left_footer{
+			float:none;
+		}
+		.right_footer{
+			.form-group_area{
+				margin-left: 20px;
+				width: 65%;
+			}
+			.form-group{
+				width: 309px;
+			}
+			.form-btn{
+				margin-left: 25%;
+			}
+		}
+	}
+}
+@media(min-width:481px) and (max-width:768px) {
+.main_header{
+	#heder_navigation{ 
+		margin-top: -61px;
+			ul{
+				display: none;
+				li{
+					display: block;
+					a{
+						display: block;
+					    color: #484c55;
+					    background: #fff;
+					    text-decoration: none;
+					    padding: 15px 0px 15px 0px;
+					    text-align: center;
+					    margin-top: 7px;
+					    &:hover{
+					    	color: #49cbcd;
+					    	border: none;
+							background-color: #f8f9fb;
+							margin: 7px 0;
+					    }
+					}
+				}
+			}
+		}
+	}
+#the_team{
+	height: 1000px;
+	h1{
+		text-align: center;
+		padding-right: 15%;
+		padding-bottom: 15px;
+	}
+	.item{
+		float: left;
+		margin:2% 9%;
+		img{
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+#service{
+	height: 600px;
+		.iteam{
+			float: left;
+			margin-left: 40px;
+			width: 190px;
+			margin-bottom: 15px;
+		.accent{
+			margin-bottom: 15px;
+		}
+		button{
+			width: 100%;
+			height: 55px;
+			padding: 0;
+		}
+	}
+}
+
+.slaider_heder{
+	p{
+		margin: 6% 0% 0% 24%;
+		font-size: 1.3em;
+	}
+	.title{
+		margin: 15% 0% 0% 16%;
+    	font-size: 3.5em;
+		}
+	.lear_more{
+		margin: 7% 0 0 31%;
+	}
+}
+footer{
+	height: 490px;
+	padding: 0;
+	text-align: center;
+		h1{
+			text-align: left;
+			padding: 5% 35% 4% 15%
+		}
+		.left_footer{
+			float: left;
+		}
+		.right_footer{
+			.form-group_area{
+				margin-left: 20px;
+				width: 65%;
+			}
+			.form-group{
+				width: 309px;
+			}
+			.form-btn{
+				margin-left: 25%;
+			}
+		}
+	}
+}
+@media(min-width:769px) and (max-width:992px) {
+.main_header{
+	#heder_navigation{
+		    width: 72%;
+		    float: right;
+		    margin-top: -84px;
+		    ul{
+		    	li{
+		    		a{
+		    			padding: 20px 20px;
+		    		}
+		    	}
+		    }
+		.menu_icon{
+			display: none;
+		}
+	}
+	.logo{
+		min-height: none;
+	}
+}
+#the_team{
+	height: 1000px;
+	h1{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.item{
+			float: left;
+		    width: 36%;
+    		margin: 2% 7%;
+		img{
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+#service{
+	height: 600px;
+		.iteam{
+			float: left;
+			margin-left: 40px;
+			width: 29%;
+			margin-bottom: 15px;
+		.accent{
+			width: 170px;
+    		height: 33px;
+		}
+		button{
+			width: 100%;
+			height: 55px;
+			padding: 0;
+		}
+	}
+}
+
+.slaider_heder{
+	p{
+		margin: 6% 0% 0% 32%;
+    	font-size: 1.5em;
+	}
+	.title{
+		margin: 15% 0% 0% 22%;
+    	font-size: 4em;
+		}
+	.lear_more{
+		margin: 7% 0 0 41%;
+	}
+}
+footer{
+	height: 490px;
+	padding: 0;
+	text-align: center;
+		h1{
+		    text-align: center;
+		    padding: 5% 14% 3% 16%;
+		}
+		.left_footer{
+			width: 50%;
+		}
+		.right_footer{
+			.form-group_area{
+				margin-left: 20px;
+				width: 65%;
+			}
+			.form-group{
+				width: 309px;
+			}
+			.form-btn{
+				margin-left: 25%;
+			}
+		}
+	}
+}
+
+
+@media(min-width:993px) and (max-width:1250px) {
+.main_header{
+	#heder_navigation{
+		    width: 72%;
+		    float: right;
+		    margin-top: -84px;
+		    ul{
+		    	li{
+		    		a{
+		    			padding: 20px 20px;
+		    		}
+		    	}
+		    }
+		.menu_icon{
+			display: none;
+		}
+	}
+	.logo{
+		min-height: none;
+	}
+}
+#the_team{
+	height: 1000px;
+	h1{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.item{
+			float: left;
+		    width: 36%;
+    		margin: 2% 7%;
+		img{
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+#service{
+	height: 600px;
+		.iteam{
+			float: left;
+			margin-left: 40px;
+			width: 29%;
+			margin-bottom: 15px;
+		.accent{
+			width: 170px;
+    		height: 33px;
+		}
+		button{
+			width: 100%;
+			height: 55px;
+			padding: 0;
+		}
+	}
+}
+
+.slaider_heder{
+	p{
+		margin: 6% 0% 0% 32%;
+    	font-size: 1.5em;
+	}
+	.title{
+		margin: 15% 0% 0% 22%;
+    	font-size: 4em;
+		}
+	.lear_more{
+		margin: 7% 0 0 41%;
+	}
+}
+footer{
+	height: 490px;
+	padding: 0;
+	text-align: center;
+		h1{
+		    text-align: center;
+		    padding: 5% 14% 3% 16%;
+		}
+		.left_footer{
+			width: 50%;
+		}
+		.right_footer{
+			.form-group_area{
+				margin-left: 20px;
+				width: 65%;
+			}
+			.form-group{
+				width: 309px;
+			}
+			.form-btn{
+				margin-left: 25%;
+			}
+		}
+	}
+}
+@media(min-width:1200px){
+.main_header{
+	#heder_navigation{
+		.menu_icon{
+			display: none;
+		}
+	}
+}
+}

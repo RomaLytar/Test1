@@ -21,6 +21,26 @@ var h_mrg = 0;    // отступ когда шапка уже не видна
     });
      
 });
+ 
+    $(document).ready(function() { 
+      $(".menu_icon").toggle(function() { 
+        // Отображаем скрытый блок 
+        $(".menu").fadeIn(); // fadeIn - плавное появление
+        return false; // не производить переход по ссылке
+      },  
+      function() { 
+        // Скрываем блок 
+        $(".menu").fadeOut(); // fadeOut - плавное исчезновение 
+        return false; // не производить переход по ссылке
+      }); // end of toggle() 
+    }); // end of ready() 
+
+
+
+
+/*$('.menu_icon').click(function(){
+    $('.menu').toggle();
+})  ; 
 
 /*$(document).ready(function(){
     $(".appointment_form").validate({
