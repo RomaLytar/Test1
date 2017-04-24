@@ -6,10 +6,12 @@
 		<meta content="" name="description" />
 		<link rel="stylesheet" href="css/fonts/fonts.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/cssfx.js"></script>
+		<link rel="stylesheet" href="libs/OwlCarouse/dist/assets/owl.carousel.min.css" />
+		<link rel="stylesheet" href="libs/OwlCarouse/dist/assets/owl.theme.default.min.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/OwlCarouse/dist/owl.carousel.min.js"></script>
 		<script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/cssfx.js"></script>
 		<script src="js/custom.js"></script>
 	</head>
 <body>
@@ -36,6 +38,46 @@
 	</header>		
 
 <main class="container">
+<div class="slaider_none">
+<div class="owl-carousel slider_header">
+	<div class="slide">
+		<img src="img/font_header.png" alt="">
+		<h4>This is a main heading</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<button>Learn More</button>
+	</div>
+	<div class="slide">
+		<img src="img/font_header.png" alt="">
+		<h4>This is a main heading</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<button>Learn More</button>
+	</div>
+	<div class="slide">
+		<img src="img/font_header.png" alt="">
+		<h4>This is a main heading</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<button>Learn More</button>
+	</div>
+	<div class="slide">
+		<img src="img/font_header.png" alt="">
+		<h4>This is a main heading</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<button>Learn More</button>
+	</div>
+	<div class="slide">
+		<img src="img/font_header.png" alt="">
+		<h4>This is a main heading</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<button>Learn More</button>
+	</div>
+	<div class="slide">
+		<img src="img/font_header.png" alt="">
+		<h4>This is a main heading</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<button>Learn More</button>
+	</div>
+</div>
+</div>
 	<section class="slaider_heder">
 		<h2 class="title">This is a main heading</h2>
 		<p>Lorem Ipsum is simply dummy text <br>of the printing   setting indu</p>
@@ -151,97 +193,10 @@
 </footer>
 
 <script type="text/javascript">
-$(document).ready(function(){
-    $("#heder_navigation").on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
-        //забираем идентификатор бока с атрибута href
-        var id  = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1000);
-    });
-
-});
-</script>
-
-<script>
-$('.menu_icon').click(function(){
+	$('.menu_icon').click(function(){
     $('.menu').toggle('easing');
 }); 
 </script>
-<!--
-  <script type='text/javascript'>
-function validate(){
-   //Записуем имя и емеил в переменные
-   var n=document.forms['form']['name'].value;
-   var e=document.forms['form']['email'].value;
-   var m=document.forms['form']['message'].value;
-   //Проверка на пустоту поля
-   if (n.length==0){
-      document.getElementById('erroe_name').innerHTML='*Заполните Имя';
-      return false;
-   }
-   //Проверка на заполнения сообщения
-   if (m.length==0){
-      document.getElementById('erroe_massage').innerHTML='*Ввидите текст сообщения';
-      return false;
-   }
-   //Проверка на пустоту поля емеил
-   if (e.length==0){
-      document.getElementById('error_email').innerHTML='*Введите E-mail';
-      return false;
-   }
-   //Есть ли @
-   dog=e.indexOf("@");
-   point=e.indexOf(".");
-   //проверка на наличия точки
-   if (dog<1 || point <1){
-      document.getElementById('error_email').innerHTML='*E-mail введен не правильно';
-      return false;
-   }
-}
-</script>
 
-
-<!--
-<script>
-	$(document).ready(function() {
-    $('#email').blur(function() {
-        if($(this).val() != '') {
-            var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-            if(pattern.test($(this).val())){
-                $(this).css({'border' : '1px solid #569b44'});
-                $('#valid').text('Верно');
-            } else {
-                $(this).css({'border' : '1px solid #ff0000'});
-                $('#valid').text('Не верно');
-            }
-        } else {
-            // Поле email пустое, выводим предупреждающее сообщение
-            $(this).css({'border' : '1px solid #ff0000'});
-            $('#valid').text('Поле email не должно быть пустым');
-        }
-    });
-});
-</script>-->
-<!--<script>
-function myFunction() {
-    var x, text;
-
-    // Get the value of the input field with id="numb"
-    x = document.getElementById("name").value;
-
-    // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x < 1 x > 20) {
-        text = "Input not valid";
-    } else {
-        text = "Input OK";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
-</script>
--->
 </body>
 </html>

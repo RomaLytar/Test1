@@ -133,11 +133,11 @@ body {
 			height: 201px;
 			cursor: pointer;
 			overflow: hidden;
-			transition: all 0.5s ease-in;
+			transition: all 0.4s ease-in;
 			&:hover{
-				transform: scale(1.4);
-				transform: all 1s ease-in;
-				filter:brightness(.5);
+				transform: scale(1.1);
+				transform: all 0.5s ease-in;
+				filter:brightness(.9);
 			}
 		}
 		float: left;
@@ -281,9 +281,49 @@ footer{
 	width: 50%;
 	height: 250px;
 }
-
-
-
+/************* Слайдер    ***********************/
+.slide{
+	position: relative;
+	h4{
+		position: absolute;
+		top:20%;
+		left:30%;
+		font-weight: 400;
+		font-size: 4em;
+	}
+	p{
+		position: absolute;
+		top:42%;
+		left:36%;
+		font-weight: 400;
+		font-size: 1.2em;
+	}
+	button{
+		position: absolute;
+	    top: 58%;
+	    left: 43%;
+		font-weight: 400;
+		font-size: 1.6em;
+		border: 3px solid #fff;
+		background: transparent;
+		padding: 20px 40px;
+		display: block;
+		border-radius: 5px;
+		color:#fff;
+		letter-spacing: 2px;
+	}
+}
+.owl-prev{
+	top: -280px;
+    left: 20px;
+    position: relative;
+}
+.owl-next{
+	position: relative;
+	top:-342px;
+	margin-right: 20px;
+	float: right;
+}
 /*************     Шрифты      ******************/
 @font-face {
     font-family: 'FontAwesome';
@@ -410,6 +450,9 @@ label.error {
 
 /**********    Адаптив        **********/
 @media(min-width:320px) and (max-width:480px) {
+.slaider_none{
+	display: none;
+}
 .main_header{
 	#heder_navigation{ 
 		margin-top: -61px;
@@ -503,6 +546,9 @@ footer{
 	}
 }
 @media(min-width:481px) and (max-width:768px) {
+.slaider_none{
+	display: none;
+}
 .main_header{
 	#heder_navigation{ 
 		margin-top: -61px;
@@ -601,6 +647,9 @@ footer{
 			}
 		}
 	}
+.slider_header{
+	display: none;
+}
 }
 @media(min-width:769px) and (max-width:992px) {
 .main_header{
@@ -624,6 +673,7 @@ footer{
 	}
 }
 #the_team{
+	margin-top: 0%;
 	height: 1000px;
 	h1{
 		text-align: center;
@@ -660,17 +710,7 @@ footer{
 }
 
 .slaider_heder{
-	p{
-		margin: 6% 0% 0% 32%;
-    	font-size: 1.5em;
-	}
-	.title{
-		margin: 15% 0% 0% 22%;
-    	font-size: 4em;
-		}
-	.lear_more{
-		margin: 7% 0 0 41%;
-	}
+	display: none;
 }
 footer{
 	height: 490px;
@@ -721,6 +761,8 @@ footer{
 	}
 }
 #the_team{
+	margin-top: 0%;
+	margin-left: 2%;
 	height: 1000px;
 	h1{
 		text-align: center;
@@ -756,19 +798,6 @@ footer{
 	}
 }
 
-.slaider_heder{
-	p{
-		margin: 6% 0% 0% 32%;
-    	font-size: 1.5em;
-	}
-	.title{
-		margin: 15% 0% 0% 22%;
-    	font-size: 4em;
-		}
-	.lear_more{
-		margin: 7% 0 0 41%;
-	}
-}
 footer{
 	height: 490px;
 	padding: 0;
@@ -793,13 +822,22 @@ footer{
 			}
 		}
 	}
+	.slaider_heder{
+	display: none;
+}
 }
 @media(min-width:1200px){
+#the_team{
+	margin-top: 8%;
+}
 .main_header{
 	#heder_navigation{
 		.menu_icon{
 			display: none;
 		}
 	}
+}
+.slaider_heder{
+	display: none;
 }
 }

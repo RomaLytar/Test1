@@ -140,12 +140,12 @@ body {
   height: 201px;
   cursor: pointer;
   overflow: hidden;
-  transition: all 0.5s ease-in;
+  transition: all 0.4s ease-in;
 }
 #the_team .item img:hover {
-  transform: scale(1.4);
-  transform: all 1s ease-in;
-  filter: brightness(0.5);
+  transform: scale(1.1);
+  transform: all 0.5s ease-in;
+  filter: brightness(0.9);
 }
 #the_team .item h4 {
   font-size: 18px;
@@ -275,6 +275,49 @@ footer h1 {
   width: 50%;
   height: 250px;
 }
+/************* Слайдер    ***********************/
+.slide {
+  position: relative;
+}
+.slide h4 {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  font-weight: 400;
+  font-size: 4em;
+}
+.slide p {
+  position: absolute;
+  top: 42%;
+  left: 36%;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.slide button {
+  position: absolute;
+  top: 58%;
+  left: 43%;
+  font-weight: 400;
+  font-size: 1.6em;
+  border: 3px solid #fff;
+  background: transparent;
+  padding: 20px 40px;
+  display: block;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.owl-prev {
+  top: -280px;
+  left: 20px;
+  position: relative;
+}
+.owl-next {
+  position: relative;
+  top: -342px;
+  margin-right: 20px;
+  float: right;
+}
 /*************     Шрифты      ******************/
 @font-face {
   font-family: 'FontAwesome';
@@ -380,6 +423,9 @@ label.error {
 }
 /**********    Адаптив        **********/
 @media (min-width: 320px) and (max-width: 480px) {
+  .slaider_none {
+    display: none;
+  }
   .main_header #heder_navigation {
     margin-top: -61px;
   }
@@ -464,6 +510,9 @@ label.error {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  .slaider_none {
+    display: none;
+  }
   .main_header #heder_navigation {
     margin-top: -61px;
   }
@@ -553,6 +602,9 @@ label.error {
   footer .right_footer .form-btn {
     margin-left: 25%;
   }
+  .slider_header {
+    display: none;
+  }
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .main_header #heder_navigation {
@@ -570,6 +622,7 @@ label.error {
     min-height: none;
   }
   #the_team {
+    margin-top: 0%;
     height: 1000px;
   }
   #the_team h1 {
@@ -602,16 +655,8 @@ label.error {
     height: 55px;
     padding: 0;
   }
-  .slaider_heder p {
-    margin: 6% 0% 0% 32%;
-    font-size: 1.5em;
-  }
-  .slaider_heder .title {
-    margin: 15% 0% 0% 22%;
-    font-size: 4em;
-  }
-  .slaider_heder .lear_more {
-    margin: 7% 0 0 41%;
+  .slaider_heder {
+    display: none;
   }
   footer {
     height: 490px;
@@ -652,6 +697,8 @@ label.error {
     min-height: none;
   }
   #the_team {
+    margin-top: 0%;
+    margin-left: 2%;
     height: 1000px;
   }
   #the_team h1 {
@@ -684,17 +731,6 @@ label.error {
     height: 55px;
     padding: 0;
   }
-  .slaider_heder p {
-    margin: 6% 0% 0% 32%;
-    font-size: 1.5em;
-  }
-  .slaider_heder .title {
-    margin: 15% 0% 0% 22%;
-    font-size: 4em;
-  }
-  .slaider_heder .lear_more {
-    margin: 7% 0 0 41%;
-  }
   footer {
     height: 490px;
     padding: 0;
@@ -717,9 +753,18 @@ label.error {
   footer .right_footer .form-btn {
     margin-left: 25%;
   }
+  .slaider_heder {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
+  #the_team {
+    margin-top: 8%;
+  }
   .main_header #heder_navigation .menu_icon {
+    display: none;
+  }
+  .slaider_heder {
     display: none;
   }
 }
